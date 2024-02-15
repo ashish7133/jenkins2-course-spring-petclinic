@@ -12,7 +12,7 @@
     <properties>
 
         <!-- Generic properties -->
-        <java.version>1.7</java.version>
+        <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -260,6 +260,21 @@
             <groupId>com.github.dandelion</groupId>
             <artifactId>datatables-export-itext</artifactId>
             <version>${dandelion.datatables.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-core</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>2.3.0</version>
         </dependency>
         <!-- temporary fix: below dependency should not be necessary as it is a transitive dependency.
         For some reason we can't build the app unless it is a first level dependency -->
